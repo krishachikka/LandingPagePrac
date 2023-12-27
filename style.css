@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,900");
+*{
+    font-family:'Poppins', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+header {
+    height: 100px;
+    padding: 20px;
+    background-color: rgb(220, 50, 118);
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+.menu-btn{
+    display: none;
+}
+button {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    margin-left: 35px;
+}
+button:hover {
+    font-weight: 800;
+    font-style: italic;
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 12vw;
+    transition: background-color 0.5s ease-in-out;
+    text-align: center;
+}
+.page1 h1{
+    color: rgb(220, 50, 118);
+    font-size: 150px;
+}
+.page1 p{
+    color: rgb(220, 50, 118);
+    font-size: 30px;  
+}
+.page2{
+    min-height: 120vh;
+    width: 100%;
+    background-color: rgb(21, 0, 157);
+    padding-top: 12vw;
+    padding: 100px;
+    padding-top: 300px;
+    text-align: center;
+    color: #fff;
+}
+.page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: black;
+    padding-top: 12vw;
+    display: flex;
+    padding: auto;
+    justify-content: space-evenly;
+    color: rgb(81, 52, 14);
+    text-align: center;
+    padding-bottom: 30px;
+}
+.kitty{
+    display: none;
+}
+#cherry1{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 2;
+}
+#pinkw1{
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    bottom: 0;
+    opacity: 0.5;
+    top: 57vh;
+    overflow: hidden;
+}
+#pinkw2{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+    top: 57vh;
+    overflow: hidden;
+}
+#pinkw3{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    top: 57vh;
+    overflow: hidden;
+}
+.container1, .container2, .container3{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-top: 200px;
+    border-radius: 20%;
+    text-align: center;
+    padding-top: 40px;
+}
+.page3 img{
+    margin-top: 50px;
+    width: 250px;
+    padding: auto;
+}
+h5{
+    justify-self: center;
+}
+.footer{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    height: 150px;
+    padding-top: 50px;
+    background-color: rgb(81, 52, 14);
+}
+body{
+    overflow-x: hidden;
+}
+/* Media query for screens with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .menu-btn{
+        display: block;
+    }
+    header{
+        position: fixed;
+        width: screen;
+        max-width: 600px;
+    }
+    .navbar {
+        margin-top: 43px;
+        margin-left: 0;
+        display: none;
+        flex-direction: column;
+        background-color: rgba(128, 128, 128, 0.615);
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    button.menu-btn {
+        display: block;
+    }
+
+    button {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .page1{
+        overflow: hidden;
+    }
+    .page1 h1{
+        margin-top: 100px;       
+        font-size: 50px;
+    }
+    .page1 img{
+        display: none;
+    }
+    .page1 .kitty{
+        display: block;
+        padding: auto;
+    }
+    .page2 p{
+        font-size: 12px;
+    }
+    .page3{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1, .container2, .container3{
+        
+    }
+}
